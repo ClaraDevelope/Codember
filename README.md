@@ -4,7 +4,7 @@
 
 # Codember 2024
 
-Aquí están los ejercicios que he completado para el challenge [Codember](https://github.com/midudev/codember2024) creado por [@midudev](https://twitter.com/midudev) para la comunidad.
+Aquí están los ejercicios que he completado para el challenge [Codember](https://codember.dev/) creado por [@midudev](https://github.com/midudev) para la comunidad.
 
 ## Ejercicio 1: [¡Consigue acceso a la terminal!]
 
