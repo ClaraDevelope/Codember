@@ -2,7 +2,7 @@
 
 ![Imagen del Challenge](https://user-images.githubusercontent.com/92958760/202008443-71b08dcb-bf48-4da9-96c3-9fc7478042e2.png)
 
-Aquí están los ejercicios que he completado para el challenge [Codember].
+Aquí están los ejercicios que he completado para el challenge [Codember] creado por @midudev para la comunidad.
 
 ## Ejercicio 1: [¡Consigue acceso a la terminal!]
 
