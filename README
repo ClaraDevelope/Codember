@@ -85,3 +85,79 @@ Resultado: 2
 Accede a este trace.txt. Tiene una lista de los movimientos que realizó ΩMEGA separados por salto de línea. Necesito que calcules los pasos que necesito ΩMEGA para salir de cada instrucción por línea, que sumes todos los resultados y me digas el resultado final de pasos que necesito ΩMEGA en total y el resultado de la última línea, separado por guión.
 
 Por ejemplo, si necesitó 99 pasos en total sumándo los pasos de cada línea y para la instrucción de la última línea necesitó 13 pasos entonces la solución a enviar sería submit 99-13
+
+$ ClaraDevelope cat CHALLENGE_03.txt
+Desafío 4: Evitando el caos en la red
+¡La IA maligna ΩMEGA está atacando la red de nodos de la empresa! Cada nodo tiene un identificador único que es un número entero y está conectado a otros nodos, formando una compleja estructura.
+ΩMEGA está destruyendo todas las redes que consten de 3 nodos o más conectados entre sí. ¡Hay que descubrir qué nodos están a salvo de sus ataques!
+
+¿Cómo funciona la red?
+
+La red se representa como una lista de pares de conexiones entre nodos. Por ejemplo:
+
+Entrada: [[1, 2], [2, 3], [4, 5]]
+Esto significa:
+
+El nodo 1 está conectado al nodo 2.
+El nodo 2 está conectado al nodo 3.
+El nodo 4 está conectado al nodo 5.
+En este caso:
+
+Los nodos 1, 2 y 3 forman un grupo conectado.
+Los nodos 4 y 5 forman otro grupo conectado.
+Ejemplo 1
+
+Entrada: [[1, 2], [2, 3], [4, 5]]
+Redes: [1, 2, 3] y [4, 5]
+ΩMEGA destruye la red [1, 2, 3]
+Nodos a salvo: 4 y 5
+Salida: [4, 5]
+Ejemplo 2
+
+Entrada: [[1, 2], [2, 3], [3, 4]]
+Redes: [1, 2, 3, 4]
+ΩMEGA destruye la red [1, 2, 3, 4]
+Nodos a salvo: ninguno
+Salida: []
+Ejemplo 3
+
+Entrada: [[4, 6], [7, 9], [10, 12], [12, 16]]
+Redes: [4, 6], [7, 9], [10, 12, 16]
+ΩMEGA destruye la red [10, 12, 16]
+Nodos a salvo: 4, 6, 7 y 9
+Salida: [4, 6, 7, 9]
+¿Qué debes hacer?
+
+Accede al archivo network.txt, que contiene una lista de conexiones entre nodos. Envía la lista de nodos ordenados de forma ascendente, separado por comas y sin espacios, que se han salvado del ataque. Por ejemplo, del Ejemplo 1 enviarías a la terminal submit 4,5.
+
+Pista: Hay 70 nodos a salvo... ¡ahora sólo falta saber cuáles son!
+
+Desafío 5: ¡Encuentra a ΩMEGA!
+La IA maligna ΩMEGA está acorralada. Tras revisar todos los nodos sanos de la red en el reto anterior... ¡hemos detectado que ΩMEGA se ha escondido en uno!
+
+No sabemos exactamente cuál es... pero sabemos las reglas que ha seguido ΩMEGA para esconderse.
+
+Necesitamos encontrar los números que cumplen las siguientes condiciones:
+
+El número es primo.
+La suma de sus dígitos también es un número primo.
+Tu tarea es escribir un programa que encuentre cuántos números de la lista cumplen con estas condiciones y determinar cuál es el tercer número que cumple con ellas al recorrer la lista en orden ascendente.
+
+Ejemplo:
+
+Si tuviéramos la lista: 11,12,13,14
+
+11: Es primo. 1 + 1 = 2, que es primo. → Cumple.
+12: No es primo. → No cumple.
+13: Es primo. 1 + 3 = 4, que no es primo. → No cumple.
+14: No es primo. → No cumple.
+En este caso, solo un número cumple las condiciones, y ese número sería el primero (11).
+
+¿Qué debes hacer?
+
+Analiza la lista de nodos del resultado del reto anterior y encuentra todos los números que cumplen las condiciones.
+Determina cuántos números cumplen las condiciones.
+Identifica el tercer número que cumple las condiciones al recorrer la lista en orden ascendente.
+Respuesta:
+
+Envía el número total de números que cumplen las condiciones y el tercer número encontrado, separados por un guión. Por ejemplo, si hay 4 números que cumplen y el tercer número es 11, enviarías: submit 4-11
